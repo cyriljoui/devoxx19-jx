@@ -24,7 +24,7 @@ public class RestPrometheusApplication {
 	@ResponseBody
 	public Map<String, Object> landingPage() {
 		Counter.builder("mymetric").tag("foo", "bar").register(registry).increment();
-        return singletonMap("hello", "world2");
+        return singletonMap("hello", "world3 for preview");
 	}
 
 	public static void main(String[] args) {
